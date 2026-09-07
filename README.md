@@ -20,7 +20,7 @@ La idea es anticiparse: hoy el SENA solo sabe si una ficha tuvo deserción *desp
 - **Fuente de datos:** [Datos Abiertos Colombia — SENA](https://www.datos.gov.co/Trabajo/DESERCION-DE-LA-FORMACI-N-PROFESIONAL-INTEGRAL/u4ze-bi7k/about_data) (42.080 fichas)
 
 ## URL del despliegue
-
+https://proyectointegradordesercionsena-lppappeb5wkyksbtyrhitbv.streamlit.app/
 
 ## Estructura del repositorio
 
