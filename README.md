@@ -15,8 +15,7 @@ Predice, a partir de las características que se conocen **al momento de crear u
 La idea es anticiparse: hoy el SENA solo sabe si una ficha tuvo deserción *después* de que ya ocurrió. Este modelo permite identificar fichas de riesgo *antes* de que empiecen, para poder priorizar el acompañamiento académico.
 
 - **Tipo de problema:** Clasificación binaria (0 = No presenta deserción, 1 = Presenta deserción)
-- **Modelo final:** Gradient Boosting (`HistGradientBoostingClassifier` de scikit-learn)
-- **Desempeño:** F1-Score (Macro) de 0,7478 sobre el conjunto de prueba
+- **Modelo final:** Voting Classifier
 - **Fuente de datos:** [Datos Abiertos Colombia — SENA](https://www.datos.gov.co/Trabajo/DESERCION-DE-LA-FORMACI-N-PROFESIONAL-INTEGRAL/u4ze-bi7k/about_data) (42.080 fichas)
 
 ## URL del despliegue
@@ -25,7 +24,7 @@ https://proyectointegradordesercionsena-lppappeb5wkyksbtyrhitbv.streamlit.app/
 ## Estructura del repositorio
 
 ```
-├── app.py                    # Aplicación web en Streamlit
+├── streamlit_app.py                    # Aplicación web en Streamlit
 ├── requirements.txt          # Dependencias del proyecto
 ├── model.joblib               # Modelo entrenado (Gradient Boosting)
 ├── scaler.joblib               # MinMaxScaler ajustado con el train
